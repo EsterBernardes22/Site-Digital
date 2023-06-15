@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MacBook Pro</title>
+  <style>
+    /* Estilo global */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      color: #000000;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Estilo do contêiner do produto */
+    .product-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px;
+    }
+
+    /* Estilo do contêiner da imagem do produto */
+    .product-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilo do contêiner da descrição do produto */
+    .product-description {
+      flex: 1;
+      padding: 0 40px;
+    }
+
+    .product-description h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+      color: #000;
+    }
+
+    .product-description p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    /* Estilo das opções de configuração do Mac */
+    .config-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .config-option {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+
+    .config-option:hover {
+      border-color: #000;
+    }
+
+    .config-option img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilo do botão de compra */
+    .buy-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buy-button:hover {
+      background-color: #333;
+    }
+
+    /* Estilo do botão de voltar */
+    .back-button {
+      background-color: transparent;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MacBook Pro</h1>
+  </header>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="IMG/Mac.png" alt="MacBook Pro">
+    </div>
+    <div class="product-description">
+      <h2>Descrição do Produto</h2>
+      <p>O MacBook Pro é um notebook poderoso com tela Retina de 13 polegadas, processador Intel Core i5, 8GB de RAM e 256GB de armazenamento SSD.</p>
+      <p>Escolha acessórios do seu MacBook Pro:</p>
+      <div class="config-options">
+        <div class="config-option">
+          <img src="IMG/mac 2.png" alt="Configuração 1">
+        </div>
+        <div class="config-option">
+          <img src="IMG/mac 3.png" alt="Configuração 2">
+        </div>
+        <div class="config-option">
+          <img src="IMG/mac 4.png" alt="Configuração 3">
+        </div>
+      </div>
+      <button class="buy-button">Comprar</button>
+      <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>

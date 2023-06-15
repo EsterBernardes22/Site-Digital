@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>iPad</title>
+  <style>
+    /* Estilo global */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      color: #000000;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Estilo do contêiner do produto */
+    .product-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px;
+    }
+
+    /* Estilo do contêiner da imagem do produto */
+    .product-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilo do contêiner da descrição do produto */
+    .product-description {
+      flex: 1;
+      padding: 0 40px;
+    }
+
+    .product-description h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+      color: #000;
+    }
+
+    .product-description p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    /* Estilo das opções de armazenamento do iPad */
+    .storage-options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .storage-option {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+
+    .storage-option:hover {
+      border-color: #000;
+    }
+
+    .storage-option img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilo das opções de cor do iPad */
+    .color-options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .color-option {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .color-option:hover {
+      opacity: 0.7;
+    }
+
+    /* Estilo do botão de compra */
+    .buy-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buy-button:hover {
+      background-color: #333;
+    }
+
+    /* Estilo do botão de voltar */
+    .back-button {
+      background-color: transparent;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>iPad</h1>
+  </header>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="IMG/ipad.jpg" alt="iPad">
+    </div>
+    <div class="product-description">
+      <h2>Descrição do Produto</h2>
+      <p>O iPad é um tablet versátil com tela Retina de 10.2 polegadas, processador A10 Fusion, suporte ao Apple Pencil e compatibilidade com o Smart Keyboard. Ele oferece uma experiência incrível para produtividade, entretenimento e criatividade.</p>
+      <p>Escolha a cor do seu iPad:</p>
+      <div class="color-options">
+        <div class="color-option" style="background-color: #000"></div>
+        <div class="color-option" style="background-color: silver"></div>
+        <div class="color-option" style="background-color: teal"></div>
+        <div class="color-option" style="background-color: midnightblue"></div>
+      </div>
+      <button class="buy-button">Comprar</button>
+      <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>

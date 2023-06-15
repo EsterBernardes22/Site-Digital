@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrocinadores </title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body */
+    body {
+      font-family: 'San Francisco', Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Header */
+    header {
+      background-color: #f3f3f3;
+      padding: 20px;
+      color: #000000;
+      text-align: center;
+    
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+  max-width: 300px;
+  height: auto;
+  background-image: linear-gradient(to right, #465953, #5b8385, #6da7b0, #82d1e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+    
+    /* Main Content */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .patrocinadores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .patrocinador {
+      width: 200px;
+      height: 150px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .patrocinador img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .frase-efeito {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      text-transform: uppercase;
+      animation: pulse 2s ease-in-out infinite;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Webverse</a>
+      <h1>Patrocinadores</h1>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <h2>Patrocinadores do nosso site</h2>
+    <div class="patrocinadores">
+      <div class="patrocinador">
+        <img src="IMG/maca.png" alt="Patrocinador 1">
+      </div>
+      <div class="patrocinador">
+        <img src="IMG/github.png" alt="Patrocinador 2">
+      </div>
+      <div class="patrocinador">
+        <img src="IMG/dell.png" alt="Patrocinador 3">
+      </div>
+      <!-- Adicione mais divs com a classe "patrocinador" para mais patrocinadores -->
+    </div>
+
+    <div class="frase-efeito">"Inovação distingue um líder de um seguidor"- Steve Jobs</div>
+  </div>
+
+</body>
+
+</html>

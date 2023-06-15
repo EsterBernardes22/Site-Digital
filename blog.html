@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - WebVerse</title>
+  <link rel="stylesheet" href="CSS/blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <style>
+    .post-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0c927c;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .post-link:hover {
+      background-color:teal ;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Webverse</a>
+      <h1>Blog</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="post">
+              <img src="IMG/LM.jpg" alt="Post Image">
+              <div class="post-content">
+                <h2>Linguagem de Marcação</h2>
+                <p>Ela define a estrutura e a apresentação de um documento, permitindo que os computadores processem, interpretem e exibam o conteúdo de maneira adequada. Exemplos comuns de linguagens de marcação incluem HTML.</p>
+                <a href="https://www.codecademy.com/catalog" class="post-link">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="post">
+              <img src="IMG/SISO.jpg" alt="Post Image">
+              <div class="post-content">
+                <h2>Sistemas Operacionais</h2>
+                <p>Ele atua como uma interface entre o usuário e o hardware, fornecendo uma plataforma para executar aplicativos e realizar operações no computador. Existem vários tipos de sistemas incluindo Windows, Android e iOS, cada um projetado para diferentes dispositivos e necessidades.</p>
+                <a href="https://www.tutorialspoint.com/operating_system/index.htm" class="post-link">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="post">
+              <img src="IMG/HR.jpg" alt="Post Image">
+              <div class="post-content">
+                <h2>Hardware e Redes</h2>
+                <p>O hardware é responsável por executar as instruções e processar os dados em um computador. As redes permitem a comunicação e transferência de dados entre dispositivos, permitindo o compartilhamento de arquivos.</p>
+                <a href="https://www.netacad.com/" class="post-link">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="post">
+              <img src="IMG/FPOO.jpg" alt="Post Image">
+              <div class="post-content">
+                <h2>Fundamentos da Programação</h2>
+                <p>Os fundamentos de programação fornecem as bases necessárias para a criação de algoritmos e resolução de problemas computacionais. Eles permitem que os programadores escrevam instruções sequenciais de forma eficiente.</p>
+                <a href="https://www.freecodecamp.org/" class="post-link">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="post">
+              <img src="IMG/Futuro.jpg" alt="Post Image">
+              <div class="post-content">
+                <h2>Tecnologias AI</h2>
+                <p>A IA permite que as máquinas realizem tarefas que normalmente requerem uma intervenção humana, tornando-se cada vez mais presente em diversas áreas, como assistentes virtuais, reconhecimento de voz, análise de dados, carros autônomos, sistemas de recomendação, diagnósticos médicos, entre outros.</p>
+                <a href="https://openai.com/blog/" class="post-link">Ler Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Webverse. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

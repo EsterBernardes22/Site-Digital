@@ -1,0 +1,261 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'San Francisco', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input#search-bar {
+  width: 100%;
+  height: 40px; /* Ajuste o valor da altura conforme necessário */
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input#search-bar:focus {
+  border-color: #000000;
+  color: #000000;
+}
+
+input#search-bar::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0.5;
+}
+
+input#search-bar::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0.5;
+}
+
+input#search-bar:-ms-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0.5;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Ajuste o valor da largura do ícone conforme necessário */
+  height: 16px; /* Ajuste o valor da altura do ícone conforme necessário */
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  background-image: linear-gradient(to right, #465953, #5b8385, #6da7b0, #82d1e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #465953;
+}
+
+.hero {
+  background-image: url('https://www.apple.com/la/alac/iphone/buy/images/meta/og__c6pnqxxo9e6a.jpg?202012181258');
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  height: 100%;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  color: #000; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.transparent-button:hover {
+  background-color: transparent;
+}
+
+.hero h1 {
+  color: #000000;
+  font-size: 48px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #5b8385;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #465953;
+}
+
+
+/* Patrocinadores */
+.patrocinadores-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.patrocinadores-wrapper img {
+  max-width: 7%;
+}
+
+.cards {
+  background-color: #F2F2F2;
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 20px);
+  text-align: center;
+  height: 100%;
+  margin-bottom: 30px;
+  padding: 30px;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  margin-top: 10%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  margin-top: -10px;
+  height: 100%;
+}
+
+button {
+  background-color: #5b8385;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #465953;
+}
+
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+ 
+}
+

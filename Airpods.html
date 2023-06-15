@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Apple AirPods</title>
+  <style>
+    /* Estilo global */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      color: #000000;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Estilo do contêiner do produto */
+    .product-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px;
+    }
+
+    /* Estilo do contêiner da imagem do produto */
+    .product-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Estilo do contêiner da descrição do produto */
+    .product-description {
+      flex: 1;
+      padding: 0 40px;
+    }
+
+    .product-description h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+      color: #000;
+    }
+
+    .product-description p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    /* Estilo das opções de cor do Apple AirPods */
+    .color-options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .color-option {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .color-option:hover {
+      opacity: 0.7;
+    }
+
+    /* Estilo do botão de compra */
+    .buy-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buy-button:hover {
+      background-color: #333;
+    }
+
+    /* Estilo do botão de voltar */
+    .back-button {
+      background-color: transparent;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apple AirPods</h1>
+  </header>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="IMG/Airpod produto.webp" alt="Apple AirPods">
+    </div>
+    <div class="product-description">
+      <h2>Descrição do Produto</h2>
+      <p>Os Apple AirPods são fones de ouvido sem fio que oferecem som de alta qualidade e conectividade fácil com dispositivos Apple. Eles possuem um design elegante e confortável, além de recursos como cancelamento de ruído, controle de toque e integração perfeita com a Siri.</p>
+      <p>Escolha a cor dos seus AirPods:</p>
+      <div class="color-options">
+        <div class="color-option" style="background-color: lightslategray"></div>
+        <div class="color-option" style="background-color: #000"></div>
+        <div class="color-option" style="background-color: teal"></div>
+      </div>
+      <button class="buy-button">Comprar</button>
+      <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>
